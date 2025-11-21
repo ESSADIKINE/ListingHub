@@ -10,18 +10,18 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
 import { FaHeart } from 'react-icons/fa'
 
 export default function HalfMap2() {
-  return (
-    <>
-        <NavbarFull/>
+    return (
+        <>
+            <NavbarFull />
 
             <div className="map-banner-wrap half-map">
                 <div className="map-left-box">
                     <div className="map-home flt-wrap">
-                        <Map/>
+                        <Map />
                     </div>
                 </div>
                 <div className="map-content-wrap">
-                    <FilterTwo/>
+                    <FilterTwo />
                     <div className="map-content-list bg-light py-4">
                         <div className="row align-items-center justify-content-between mb-4">
                             <div className="col-xl- 5 col-lg-5 col-md-5 col-sm-6 col-6">
@@ -29,7 +29,7 @@ export default function HalfMap2() {
                                     <h6 className="fw-medium mb-0">106 Listings Founds</h6>
                                 </div>
                             </div>
-                            
+
                             <div className="col-xl- 5 col-lg-5 col-md-5 col-sm-6 col-6">
                                 <div className="text-end">
                                     <div className="dropdown d-inline-flex p-0">
@@ -52,77 +52,77 @@ export default function HalfMap2() {
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div className="row align-items-center justify-content-center g-xl-4 g-3">
-                            
-                        {listData.slice(0,8).map((item,index)=>{
-                            let Icon = item.tagIcon
-                            return(
-                                <div className="col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12" key={index}>
-                                    <div className="listingitem-container">
-                                        <div className="singlelisting-item">
-                                            <div className="listing-top-item">
-                                                <div className="position-absolute end-0 top-0 me-3 mt-3 z-2">
-                                                    <Link href="#" className="bookmarkList" data-bs-toggle="tooltip" data-bs-title="Save Listing"><BsSuitHeart className="m-0"/></Link>
-                                                </div>
-                                                <Link href="#" className="topLink">
-                                                    <div className="position-absolute start-0 top-0 ms-3 mt-3 z-2">
-                                                        <div className="d-flex align-items-center justify-content-start gap-2">
-                                                            {item.status === 'open' ? (<span className="badge badge-xs text-uppercase listOpen">Open</span>) :(<span className="badge badge-xs text-uppercase listClose">Closed</span>)}
-        
-                                                            <span className="badge badge-xs badge-transparent">$$$</span>
-        
-                                                            {item.featured === true && 
-                                                                <span className="badge badge-xs badge-transparent d-flex align-items-center"><BsStar className="mb-0 me-1"/>Featured</span>
-                                                            }
-                                                        </div>
+
+                            {listData.slice(0, 8).map((item, index) => {
+                                let Icon = item.tagIcon
+                                return (
+                                    <div className="col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12" key={index}>
+                                        <div className="listingitem-container">
+                                            <div className="singlelisting-item">
+                                                <div className="listing-top-item">
+                                                    <div className="position-absolute end-0 top-0 me-3 mt-3 z-2">
+                                                        <Link href="#" className="bookmarkList" data-bs-toggle="tooltip" data-bs-title="Save Listing"><BsSuitHeart className="m-0" /></Link>
                                                     </div>
-                                                    <img src={item.image} className="img-fluid" alt="Listing Image"/>
-                                                </Link>
-                                                <div className="opssListing position-absolute start-0 bottom-0 ms-3 mb-4 z-2">
-                                                    <div className="d-flex align-items-center justify-content-between gap-2">
-                                                        <div className="listing-avatar">
-                                                            <Link href="#" className="avatarImg"><img src={item.user} className="img-fluid circle" alt="Avatar"/></Link>
+                                                    <Link href="#" className="topLink">
+                                                        <div className="position-absolute start-0 top-0 ms-3 mt-3 z-2">
+                                                            <div className="d-flex align-items-center justify-content-start gap-2">
+                                                                {item.status === 'open' ? (<span className="badge badge-xs text-uppercase listOpen">Open</span>) : (<span className="badge badge-xs text-uppercase listClose">Closed</span>)}
+
+                                                                <span className="badge badge-xs badge-transparent">$$$</span>
+
+                                                                {item.featured === true &&
+                                                                    <span className="badge badge-xs badge-transparent d-flex align-items-center"><BsStar className="mb-0 me-1" />Featured</span>
+                                                                }
+                                                            </div>
                                                         </div>
-                                                        <div className="listing-details">
-                                                            <h4 className="listingTitle"><Link href={`/single-listing-02/${item.id}`} className="titleLink">{item.title}<span className="verified"><BsPatchCheckFill className="bi bi-patch-check-fill m-0"/></span></Link></h4>
-                                                            <div className="list-infos">
-                                                                <div className="d-flex  gap-3 mt-1">
-                                                                    <div className="list-distance text-light d-flex align-items-center"><BsGeoAlt className="mb-0 me-2"/>{item.loction}</div>
-                                                                    <div className="list-calls text-light hide-mob mt-1 d-flex align-items-center"><BsTelephone className="mb-0 me-2"/>{item.call}</div>
+                                                        <img src={item.image} className="img-fluid" alt="Listing Image" />
+                                                    </Link>
+                                                    <div className="opssListing position-absolute start-0 bottom-0 ms-3 mb-4 z-2">
+                                                        <div className="d-flex align-items-center justify-content-between gap-2">
+                                                            <div className="listing-avatar">
+                                                                <Link href="#" className="avatarImg"><img src={item.user} className="img-fluid circle" alt="Avatar" /></Link>
+                                                            </div>
+                                                            <div className="listing-details">
+                                                                <h4 className="listingTitle"><Link href={`/single-listing-02/${item.id}`} className="titleLink">{item.title}<span className="verified"><BsPatchCheckFill className="bi bi-patch-check-fill m-0" /></span></Link></h4>
+                                                                <div className="list-infos">
+                                                                    <div className="d-flex  gap-3 mt-1">
+                                                                        <div className="list-distance text-light d-flex align-items-center"><BsGeoAlt className="mb-0 me-2" />{item.loction}</div>
+                                                                        <div className="list-calls text-light hide-mob mt-1 d-flex align-items-center"><BsTelephone className="mb-0 me-2" />{item.call}</div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div className="listing-footer-item">
-                                                <div className="d-flex align-items-center justify-content-between gap-2">
-                                                    <div className="catdWraps">
-                                                        <div className="flex-start">
-                                                            <Link href="#" className="d-flex align-items-center justify-content-start gap-2">
-                                                                <span className={item.tagIconStyle}><Icon className=""></Icon></span>
-                                                                <span className="catTitle">{item.tag}</span>
-                                                            </Link>
+                                                <div className="listing-footer-item">
+                                                    <div className="d-flex align-items-center justify-content-between gap-2">
+                                                        <div className="catdWraps">
+                                                            <div className="flex-start">
+                                                                <Link href="#" className="d-flex align-items-center justify-content-start gap-2">
+                                                                    <span className={item.tagIconStyle}><Icon className=""></Icon></span>
+                                                                    <span className="catTitle">{item.tag}</span>
+                                                                </Link>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="listing-shares">
-                                                        <div className="d-flex align-items-center justify-content-start gap-2">
-                                                            <Link href="#" className="smallLinks" data-bs-toggle="tooltip" data-bs-title="View Listing"><BsEyeFill className="m-0"/></Link>
-                                                            <Link href="#" className="smallLinks" data-bs-toggle="tooltip" data-bs-title="Save Listing"><BsSuitHeart className="m-0"/></Link>
-                                                            <Link href="#" className="smallLinks" data-bs-toggle="tooltip" data-bs-title="Share Listing"><BsShareFill className="m-0"/></Link>
+                                                        <div className="listing-shares">
+                                                            <div className="d-flex align-items-center justify-content-start gap-2">
+                                                                <Link href="#" className="smallLinks" data-bs-toggle="tooltip" data-bs-title="View Listing"><BsEyeFill className="m-0" /></Link>
+                                                                <Link href="#" className="smallLinks" data-bs-toggle="tooltip" data-bs-title="Save Listing"><BsSuitHeart className="m-0" /></Link>
+                                                                <Link href="#" className="smallLinks" data-bs-toggle="tooltip" data-bs-title="Share Listing"><BsShareFill className="m-0" /></Link>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            )
-                        })}								
-                            
+                                )
+                            })}
+
                         </div>
-                        
+
                         <div className="row align-items-center justify-content-center my-5">
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <nav aria-label="Page navigation example">
@@ -136,23 +136,23 @@ export default function HalfMap2() {
                                         <li className="page-item"><Link href="#" className="page-link">4</Link></li>
                                         <li className="page-item"><Link href="#" className="page-link">5</Link></li>
                                         <li className="page-item">
-                                            <Link className="page-link"><FaArrowRight /></Link>
+                                            <Link href="#" className="page-link"><FaArrowRight /></Link>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        
+
                         <div className="row align-items-center justify-content-center mt-5">
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <div className="copyrightbox text-center"><p className="mb-0">© {new Date().getFullYear()} ListingHub. Develop with <FaHeart className="ms-1 text-danger"></FaHeart>  By <Link href="https://shreethemes.in/" target="_blank">Shreethemes</Link></p></div>
                             </div>
                         </div>
-                            
+
                     </div>
                 </div>
-                
+
             </div>
-    </>
-  )
+        </>
+    )
 }
