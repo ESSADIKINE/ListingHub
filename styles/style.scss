@@ -5464,7 +5464,7 @@ nav a {
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  justify-content: start;
+    justify-content: flex-start;
   padding-left: 14px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -5736,7 +5736,7 @@ span.noti-status {
 
       a {
         align-items: center;
-        justify-content: start;
+          justify-content: flex-start;
       }
     }
 
@@ -5872,7 +5872,7 @@ span.noti-status {
         padding: 0.8rem 0.6rem;
         display: flex;
         align-items: center;
-        justify-content: start;
+            justify-content: flex-start;
         position: relative;
         border-radius: 0.4rem;
         font-size: 15px;
@@ -5965,7 +5965,7 @@ span.noti-status {
           padding: 1rem 1.4rem;
           display: flex;
           align-items: center;
-          justify-content: start;
+          justify-content: flex-start;
           position: relative;
           border-radius: 0rem;
           font-size: 15px;
@@ -8737,7 +8737,7 @@ ListingHub Elements Styles
     .titlesName {
       display: flex;
       align-items: center;
-      justify-content: start;
+        justify-content: flex-start;
       font-weight: 500;
 
       .Bookscats {
@@ -8782,7 +8782,7 @@ ListingHub Elements Styles
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: flex-start;
       margin-bottom: 7px;
 
       .listTitle {
