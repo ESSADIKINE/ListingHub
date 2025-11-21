@@ -128,19 +128,25 @@ export default function Elements() {
                             
                             <h6>Select Form</h6>
                             <div className="form-group">
-                            <Select placeholder="Eat & Drinking" options={options} className="categories form-control"/>
+                            <Select
+                                instanceId="elements-single"
+                                placeholder="Eat & Drinking"
+                                options={options}
+                                className="categories form-control"
+                            />
                             </div>
                             
                             <h6>Multi Selection</h6>
                             <div className="form-group">
                                 <Select
+                                    instanceId="elements-multi"
                                     className="select form-control"
                                     isMulti
                                     name="features"
                                     options={options}
                                     value={selectedOptions}
                                     onChange={handleChange}
-                                    />
+                                />
                             </div>
                         </div>
                     </div>

@@ -33,7 +33,12 @@ export default function FormThree() {
                     <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
                         <div className="form-group fw-medium lights-bg no-border">
                             <div className="selects">
-                                <Select placeholder="Eat & Drinking" options={options} className="categories form-control"/>
+                                <Select
+                                    instanceId="form-three-category"
+                                    placeholder="Eat & Drinking"
+                                    options={options}
+                                    className="categories form-control"
+                                />
                             </div>
                         </div>
                     </div>

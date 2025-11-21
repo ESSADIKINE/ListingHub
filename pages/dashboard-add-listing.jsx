@@ -101,7 +101,12 @@ export default function DashboardAddListing() {
                                                         <div className="form-group form-border">
                                                             <label className="lableTitle">Category</label>
                                                             <div className="selects">
-                                                                <Select placeholder="Eat & Drinking" options={options} className="categories form-control"/>
+                                                                <Select
+                                                                    instanceId="dashboard-category"
+                                                                    placeholder="Eat & Drinking"
+                                                                    options={options}
+                                                                    className="categories form-control"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -141,7 +146,12 @@ export default function DashboardAddListing() {
                                                         <div className="form-group form-border">
                                                             <label className="lableTitle">City</label>
                                                             <div className="selects">
-                                                                <Select options={city} placeholder="City, Country or zip" className="location form-control"/>
+                                                                <Select
+                                                                    instanceId="dashboard-city"
+                                                                    options={city}
+                                                                    placeholder="City, Country or zip"
+                                                                    className="location form-control"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -197,10 +207,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Monday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-monday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-monday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -209,10 +229,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Tuesday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-tuesday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-tuesday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -221,10 +251,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Wednesday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-wednesday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-wednesday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -233,10 +273,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Thursday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-thursday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-thursday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -245,10 +295,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Friday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-friday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-friday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -257,10 +317,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Saturday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-saturday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-saturday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -269,10 +339,20 @@ export default function DashboardAddListing() {
                                                         <div className="row align-items-center g-3">
                                                             <label className="lableTitle col-lg-2 col-md-2">Sunday</label>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='openingtime chosen-select border' options={time} placeholder="Opening Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-sunday-opening"
+                                                                    className='openingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Opening Time"
+                                                                />
                                                             </div>
                                                             <div className="col-lg-5 col-md-5">
-                                                                <Select className='closingtime chosen-select border' options={time} placeholder="Closing Time"/>
+                                                                <Select
+                                                                    instanceId="dashboard-sunday-closing"
+                                                                    className='closingtime chosen-select border'
+                                                                    options={time}
+                                                                    placeholder="Closing Time"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -427,7 +507,12 @@ export default function DashboardAddListing() {
                                                         <div className="form-group form-border">
                                                             <label className="lableTitle">Choose Category<BsPatchQuestionFill className="lableTip " data-bs-toggle="tooltip" data-bs-title="Choose your Item Category"/></label>
                                                             <div className="selects">
-                                                                <Select className="categories form-control" options={menu} placeholder="All Categories"/>
+                                                                <Select
+                                                                    instanceId="dashboard-menu-category"
+                                                                    className="categories form-control"
+                                                                    options={menu}
+                                                                    placeholder="All Categories"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>

@@ -36,7 +36,12 @@ export default function FormFour() {
 					<div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 						<div className="form-groupp fw-medium mb-0 position-relative">
 							<div className="position-relative lights-bg">
-                            	<Select placeholder="All Categories" options={options} className="categories form-control"/>
+                                <Select
+                                    instanceId="form-four-category"
+                                    placeholder="All Categories"
+                                    options={options}
+                                    className="categories form-control"
+                                />
 							</div>
 						</div>
 					</div>
@@ -44,7 +49,12 @@ export default function FormFour() {
 					<div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 						<div className="form-groupp fw-medium mb-0 position-relative">
 							<div className="position-relative lights-bg">
-                            	<Select placeholder="City, Country or zip" options={options2} className="categories form-control"/>
+                                <Select
+                                    instanceId="form-four-location"
+                                    placeholder="City, Country or zip"
+                                    options={options2}
+                                    className="categories form-control"
+                                />
 							</div>
 						</div>
 					</div>
