@@ -145,9 +145,10 @@ export default function SingleSidebarThree() {
                         <div className="form-group form-border">
                             <div className="position-relative fw-medium">
                                 <Select
+                                    instanceId="sidebar-three-time"
                                     className="choosetime form-control"
                                     options={option2}
-                                    />
+                                />
                             </div>
                         </div>
                         <div className="form-group form-border">
@@ -170,13 +171,14 @@ export default function SingleSidebarThree() {
                         <div className="form-group form-border">
                             <div className="position-relative fw-medium">
                                 <Select
+                                    instanceId="sidebar-three-features"
                                     className="features form-control"
                                     isMulti
                                     name="features"
                                     options={options}
                                     value={selectedOptions}
                                     onChange={handleChange}
-                                    />
+                                />
                             </div>
                         </div>
                         <div className="form-group form-border">

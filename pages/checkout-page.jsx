@@ -112,7 +112,12 @@ export default function CheckoutPage() {
                                     <div className="form-group form-border">
                                         <label>City<i className="req">*</i></label>
                                         <div className="selects">
-                                            <Select placeholder="City, Country or zip" options={options} className="location form-control"/>
+                                            <Select
+                                                instanceId="checkout-location"
+                                                placeholder="City, Country or zip"
+                                                options={options}
+                                                className="location form-control"
+                                            />
                                         </div>
                                     </div>
                                 </div>

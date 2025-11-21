@@ -113,7 +113,12 @@ export default function Reviews() {
                                     <div className="col-xl-6 col-lg-6 col-md-12">
                                         <div className="form-group form-border">
                                             <div className="position-relative">
-                                                <Select placeholder="Select Rating" options={options} className="categories form-control"/>
+                                                <Select
+                                                    instanceId="reviews-rating"
+                                                    placeholder="Select Rating"
+                                                    options={options}
+                                                    className="categories form-control"
+                                                />
                                             </div>
                                         </div>
                                     </div>
