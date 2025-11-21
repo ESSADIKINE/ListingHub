@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import '../styles/style.scss'
 import '../styles/globals.css'
 

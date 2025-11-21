@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 
 import { BsPatchCheckFill, BsTelephone, BsCoin, BsLightningChargeFill } from 'react-icons/bs'
 import FilterTwo from 'components/filter-two'
 import NavbarFull from 'components/navbar/navbar-full'
 import { listData } from 'data/data'
-import Map from 'components/map'
+const Map = dynamic(() => import('components/map'), { ssr: false })
 import { FaArrowLeft, FaArrowRight, FaStar, FaLocationDot, FaHeart } from 'react-icons/fa6'
 
 export default function HalfMap4() {

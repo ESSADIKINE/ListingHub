@@ -1,11 +1,12 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 
 import { BsGeoAlt, BsPatchCheckFill, BsStar, BsSuitHeart, BsTelephone, BsEyeFill, BsShareFill } from 'react-icons/bs'
 import FilterTwo from 'components/filter-two'
 import NavbarFull from 'components/navbar/navbar-full'
 import { listData } from 'data/data'
 import Link from 'next/link'
-import Map from 'components/map'
+const Map = dynamic(() => import('components/map'), { ssr: false })
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
 import { FaHeart } from 'react-icons/fa'
 

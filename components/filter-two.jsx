@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import Link from 'next/link'
 import { BsCrosshair2, BsList, BsSearch, BsStarFill, BsUiRadiosGrid } from 'react-icons/bs'
