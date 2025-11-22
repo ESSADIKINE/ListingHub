@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLightTwo from 'components/navbar/nav-light-two'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/single-1.jpg'
 const logo1 = '/assets/img/logo-1.png'
 const tick = '/assets/img/tick.svg'
@@ -28,115 +28,115 @@ import { listData } from 'data/data'
 export default function SingleListing1() {
     const { query } = useRouter()
     const { id } = query
-    let data = listData.find((item)=>item.id === parseInt(id))
-  return (
-    <>
-        <NavLightTwo/>
+    let data = listData.find((item) => item.id === parseInt(id))
+    return (
+        <>
+            <NavbarLight />
 
-        <section className="bg-cover position-relative ht-500 py-0" style={{backgroundImage:`url(${data?.image ? data?.image : bg})`}} data-overlay="4">
-            <div className="container h-100">
-                <div className="row align-items-start">
-                    <div className="col-xl-12 col-lg-12 col-md-12 col-12">
-                        <div className="mainlistingInfo">
-                            <div className="d-flex align-items-end justify-content-between flex-wrap gap-3">
-                                <div className="firstColumn">
-                                    <div className="listingFirstinfo d-flex align-items-center justify-content-start gap-3 flex-wrap">
-                                        <div className="listingAvatar">
-                                            <Link href="#" className="d-block"><img src={logo1} className="img-fluid rounded-3" width="95" alt="Avatar"/></Link>
-                                        </div>
-                                        <div className="listingCaptioninfo">
-                                            <div className="propertyTitlename d-flex align-items-center gap-2 mb-1"><h2 className="fw-semibold text-light mb-0">{data?.title ? data?.title : 'Liman Restaurant'}</h2><span className="verified mt-1"><img src={tick} className="img-fluid" width="22" alt="Verified Listing"/></span></div>
-                                            <div className="listingsbasicInfo">
-                                                <div className="d-flex align-items-center justify-content-start flex-wrap gap-2">
-                                                    <div className="flexItem me-2"><span className="text-md fw-medium text-light d-flex align-items-center"><FaLocationDot className="me-2"/>{data?.loction ? data?.loction : 'Old Paris, France'}</span></div>
-                                                    <div className="flexItem me-2"><span className="text-md fw-medium text-light d-flex align-items-center"><BiBriefcase className="me-2"/>{data?.tag ? data?.tag : 'Eat & Drink'}</span></div>
-                                                    <div className="flexItem me-2"><span className="text-md fw-medium text-light">$$$</span></div>
-                                                    <div className="flexItem">
-                                                        <div className="d-flex align-items-center justify-content-start gap-2">
-                                                            <div className="d-flex align-items-center justify-content-start gap-1">
-                                                                <BsStarFill className="text-warning text-sm"/><BsStarFill className="text-warning text-sm"/><BsStarFill className="text-warning text-sm"/><BsStarFill className="text-warning text-sm"/><BsStarHalf className="text-warning text-sm"/>
+            <section className="bg-cover position-relative ht-500 py-0" style={{ backgroundImage: `url(${data?.image ? data?.image : bg})` }} data-overlay="4">
+                <div className="container h-100">
+                    <div className="row align-items-start">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-12">
+                            <div className="mainlistingInfo">
+                                <div className="d-flex align-items-end justify-content-between flex-wrap gap-3">
+                                    <div className="firstColumn">
+                                        <div className="listingFirstinfo d-flex align-items-center justify-content-start gap-3 flex-wrap">
+                                            <div className="listingAvatar">
+                                                <Link href="#" className="d-block"><img src={logo1} className="img-fluid rounded-3" width="95" alt="Avatar" /></Link>
+                                            </div>
+                                            <div className="listingCaptioninfo">
+                                                <div className="propertyTitlename d-flex align-items-center gap-2 mb-1"><h2 className="fw-semibold text-light mb-0">{data?.title ? data?.title : 'Liman Restaurant'}</h2><span className="verified mt-1"><img src={tick} className="img-fluid" width="22" alt="Verified Listing" /></span></div>
+                                                <div className="listingsbasicInfo">
+                                                    <div className="d-flex align-items-center justify-content-start flex-wrap gap-2">
+                                                        <div className="flexItem me-2"><span className="text-md fw-medium text-light d-flex align-items-center"><FaLocationDot className="me-2" />{data?.loction ? data?.loction : 'Old Paris, France'}</span></div>
+                                                        <div className="flexItem me-2"><span className="text-md fw-medium text-light d-flex align-items-center"><BiBriefcase className="me-2" />{data?.tag ? data?.tag : 'Eat & Drink'}</span></div>
+                                                        <div className="flexItem me-2"><span className="text-md fw-medium text-light">$$$</span></div>
+                                                        <div className="flexItem">
+                                                            <div className="d-flex align-items-center justify-content-start gap-2">
+                                                                <div className="d-flex align-items-center justify-content-start gap-1">
+                                                                    <BsStarFill className="text-warning text-sm" /><BsStarFill className="text-warning text-sm" /><BsStarFill className="text-warning text-sm" /><BsStarFill className="text-warning text-sm" /><BsStarHalf className="text-warning text-sm" />
+                                                                </div>
+                                                                <span className="text-md fw-medium text-light">{data?.review ? `(${data?.review})` : '(42k Reviews)'}</span>
                                                             </div>
-                                                            <span className="text-md fw-medium text-light">{data?.review ? `(${data?.review})` : '(42k Reviews)'}</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="lastColumn">	
-                                    <div className="d-flex align-items-center justify-content-md-end flex-wrap gap-3">
-                                        <div className="flexStart Priceinfo d-flex flex-column">
-                                            <span className="fw-medium text-light">Price Range</span>
-                                            <span className="fw-bold fs-6 text-light">$25 - $50</span>
+                                    <div className="lastColumn">
+                                        <div className="d-flex align-items-center justify-content-md-end flex-wrap gap-3">
+                                            <div className="flexStart Priceinfo d-flex flex-column">
+                                                <span className="fw-medium text-light">Price Range</span>
+                                                <span className="fw-bold fs-6 text-light">$25 - $50</span>
+                                            </div>
+                                            <div className="flexlastButton"><button type="button" className="btn px-4 btn-whites text-primary fw-medium" data-bs-toggle="modal" data-bs-target="#messageModal"><BsSendCheck className="me-2" />Send Message</button></div>
                                         </div>
-                                        <div className="flexlastButton"><button type="button" className="btn px-4 btn-whites text-primary fw-medium" data-bs-toggle="modal" data-bs-target="#messageModal"><BsSendCheck className="me-2"/>Send Message</button></div>
-                                    </div>	
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <FeatureNav/>
+            </section>
+            <FeatureNav />
 
-        <section className="gray-simple pt-4 pt-xl-5">
-            <div data-bs-spy="scroll" data-bs-target="#scrollphyNav" data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0">
-                <div className="container">
-                    <div className="row align-items-start gx-xl-5 g-4">
-                        <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
-                            <Descriptions/>
-                            
-                            <Pricings/>
-                            
-                            <Products/>
-                            
-                           <Features/>
-                            
-                            <Galleries/>
-                            
-                            <Maps/>
-                            
-                            
-                            <Statistics/>
-                            
-                            <Reviews/>
+            <section className="gray-simple pt-4 pt-xl-5">
+                <div data-bs-spy="scroll" data-bs-target="#scrollphyNav" data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0">
+                    <div className="container">
+                        <div className="row align-items-start gx-xl-5 g-4">
+                            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                <Descriptions />
 
-                            <List/>
-                            
-                        </div>
-                        
-                        <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <SingleSidebarOne/>
-                        </div>
-                    
-                    </div>
-                
-                </div>
-            </div>
-        </section>
-        <FooterTop/>
-        <Footer/>
-        <BackToTop/>
-        <div className="modal modal-lg fade" id="messageModal" tabIndex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered">
-                <div className="modal-content">
-                    <div className="modal-header bg-light border-0 px-md-5 d-flex justify-content-between">
-                        <h4 className="modal-title fw-medium" id="messageModalLabel">Send Message</h4>
-                        <Link href="#" data-bs-dismiss="modal" aria-label="Close" className="square--40 circle bg-light-danger text-danger"><BsX className="bi bi-x"/></Link>
-                    </div>
-                    <div className="modal-body p-md-5">
-                        <div className="messageForm">
-                            <div className="form-group">
-                                <textarea className="form-control" placeholder="Type your Message To Dan"></textarea>
+                                <Pricings />
+
+                                <Products />
+
+                                <Features />
+
+                                <Galleries />
+
+                                <Maps />
+
+
+                                <Statistics />
+
+                                <Reviews />
+
+                                <List />
+
                             </div>
-                            <button type="button" className="btn btn-primary fw-medium px-md-5">Send message<FiArrowRight className="ms-2"/></button>
+
+                            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                <SingleSidebarOne />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <FooterTop />
+            <Footer />
+            <BackToTop />
+            <div className="modal modal-lg fade" id="messageModal" tabIndex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="modal-header bg-light border-0 px-md-5 d-flex justify-content-between">
+                            <h4 className="modal-title fw-medium" id="messageModalLabel">Send Message</h4>
+                            <Link href="#" data-bs-dismiss="modal" aria-label="Close" className="square--40 circle bg-light-danger text-danger"><BsX className="bi bi-x" /></Link>
+                        </div>
+                        <div className="modal-body p-md-5">
+                            <div className="messageForm">
+                                <div className="form-group">
+                                    <textarea className="form-control" placeholder="Type your Message To Dan"></textarea>
+                                </div>
+                                <button type="button" className="btn btn-primary fw-medium px-md-5">Send message<FiArrowRight className="ms-2" /></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }

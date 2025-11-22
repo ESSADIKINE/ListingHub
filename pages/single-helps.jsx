@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/title-bg.png'
 import Link from 'next/link'
 import {Link as Link1} from 'react-scroll'
@@ -12,7 +12,7 @@ import { MdArrowForwardIos } from 'react-icons/md'
 export default function SingleHelps() {
   return (
     <>
-     <NavbarDark/>   
+     <NavbarLight/>   
 
     <section className="bg-cover position-relative" style={{backgroundColor:`#ffe8ee`, backgroundImage:`url(${bg})`}}>
         <div className="container">

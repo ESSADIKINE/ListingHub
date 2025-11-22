@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Select from 'react-select';
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import { MdArrowForwardIos } from 'react-icons/md'
 import FooterTop from 'components/footer-top';
 import Footer from 'components/footer';
@@ -21,7 +21,7 @@ export default function CheckoutPage() {
       ];
   return (
     <>
-     <NavbarDark/>
+     <NavbarLight/>
 
     <section className="bg-light">
         <div className="container">

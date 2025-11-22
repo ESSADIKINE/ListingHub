@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/title-banner.jpg'
 import Link from 'next/link'
 import { MdArrowForwardIos } from 'react-icons/md'
@@ -14,7 +14,7 @@ import BackToTop from 'components/back-to-top'
 export default function Blog() {
   return (
     <>
-     <NavbarDark/>
+     <NavbarLight/>
 
     <section className="bg-cover position-relative" style={{backgroundImage:`url(${bg})`}} data-overlay="6">
         <div className="container">

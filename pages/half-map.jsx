@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 
 import { BsGeoAlt, BsPatchCheckFill, BsStar, BsSuitHeart, BsTelephone } from 'react-icons/bs'
 import FilterTwo from 'components/filter-two'
-import NavbarFull from 'components/navbar/navbar-full'
+import NavbarLight from 'components/navbar/navbar-light'
 import { listData } from 'data/data'
 import Link from 'next/link'
 const Map = dynamic(() => import('components/map'), { ssr: false })
@@ -13,7 +13,7 @@ import { FaHeart } from 'react-icons/fa'
 export default function HalfMap1() {
     return (
         <>
-            <NavbarFull />
+            <NavbarLight />
 
             <div className="map-banner-wrap half-map">
                 <div className="map-left-box">

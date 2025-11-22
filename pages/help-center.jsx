@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/title-bg.png'
 import Link from 'next/link'
 import { BsBoxArrowInRight} from 'react-icons/bs'
@@ -11,7 +11,7 @@ import Footer from 'components/footer'
 export default function HelpCenter() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
 
         <section className="bg-cover position-relative" style={{backgroundImage:`url(${bg})`, backgroundColor:'#ffe8ee'}}>
             <div className="container">

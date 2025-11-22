@@ -1,7 +1,7 @@
 import React from 'react'
 const bg = '/assets/img/auth-bg.png'
 
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import FooterTop from 'components/footer-top'
 import Footer from 'components/footer'
 import BackToTop from 'components/back-to-top'
@@ -11,7 +11,7 @@ import { BsCheckCircleFill, BsPatchCheckFill } from 'react-icons/bs'
 export default function SuccessPayment() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
 
         <section className="bg-cover" style={{backgroundColor:`#ffe8ee`, backgroundImage:`url(${bg})`}}>
             <div className="container">

@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { MdArrowForwardIos } from 'react-icons/md'
@@ -21,7 +21,7 @@ export default function BlogDetail() {
     const data = blogData.find((item)=>item.id === parseInt(id))
   return (
     <div className='bg-light'>
-        <NavbarDark/>
+        <NavbarLight/>
         <section>
             <div className="container">
                 <div className="row justify-content-start align-items-center">

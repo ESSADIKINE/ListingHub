@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const logo = '/assets/img/logo.svg'
 
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/auth-bg.png'
 import { BsDownload, BsPrinter } from 'react-icons/bs'
 import FooterTop from 'components/footer-top'
@@ -13,7 +13,7 @@ import BackToTop from 'components/back-to-top'
 export default function InvoicePage() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
             <section className="bg-cover" style={{backgroundImage:`url(${bg})`, backgroundColor:`#ffe8ee`}}>
 				<div className="container">
 					<div className="row align-items-center justify-content-center">

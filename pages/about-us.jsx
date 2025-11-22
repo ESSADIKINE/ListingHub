@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/title-banner.jpg'
 const bg2 = '/assets/img/banner-2.jpg'
 import Link from 'next/link'
@@ -17,7 +17,7 @@ import BackToTop from 'components/back-to-top'
 export default function AboutUs() {
   return (
     <>
-     <NavbarDark/>
+     <NavbarLight/>
 
     <section className="bg-cover position-relative" style={{backgroundImage:`url(${bg})`}} data-overlay="6">
         <div className="container">

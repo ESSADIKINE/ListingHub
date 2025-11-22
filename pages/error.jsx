@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import Link from 'next/link'
 import { MdArrowForwardIos } from 'react-icons/md'
 const bg = '/assets/img/error.svg'
@@ -10,7 +10,7 @@ import BackToTop from 'components/back-to-top'
 export default function Error() {
   return (
     <>
-    <NavbarDark/>   
+    <NavbarLight/>   
 
     <section className="bg-light">
         <div className="container">

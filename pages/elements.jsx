@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import { MdArrowForwardIos } from 'react-icons/md'
 import Link from 'next/link'
 import { BsTwitter } from 'react-icons/bs'
@@ -29,7 +29,7 @@ export default function Elements() {
 
   return (
     <>
-    <NavbarDark/>
+    <NavbarLight/>
     <section className="bg-light">
         <div className="container">
             <div className="row justify-content-start align-items-center">

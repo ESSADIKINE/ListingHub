@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import Link from 'next/link'
 import { MdArrowForwardIos } from 'react-icons/md'
 const img1 = '/assets/img/h.jpg'
@@ -26,7 +26,7 @@ export default function Viewcart() {
     };
   return (
     <>
-    <NavbarDark/>
+    <NavbarLight/>
 
     <section className="bg-light">
         <div className="container">

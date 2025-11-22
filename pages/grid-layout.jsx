@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 
 const bg = '/assets/img/banner-6.jpg'
 import { BsGeoAlt, BsPatchCheckFill, BsSearch, BsStar, BsSuitHeart, BsTelephone } from 'react-icons/bs'
@@ -14,7 +14,7 @@ import BackToTop from 'components/back-to-top'
 export default function GridLayout1() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
 
         <div className="image-cover hero-banner bg-primary" style={{backgroundImage:`url(${bg})`}} data-overlay="5">
             <div className="container">

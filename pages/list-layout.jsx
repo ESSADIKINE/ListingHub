@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 const bg = '/assets/img/banner-6.jpg'
 import { BsCoin, BsLightningChargeFill, BsPatchCheckFill, BsSearch, BsTelephone } from 'react-icons/bs'
 import { FaArrowLeft, FaArrowRight, FaHeart, FaLocationDot, FaStar } from 'react-icons/fa6'
@@ -14,7 +14,7 @@ import Link from 'next/link'
 export default function ListLayout1() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
 
         <div className="image-cover hero-banner bg-primary" style={{backgroundImage:`url(${bg})`}} data-overlay="5">
             <div className="container">

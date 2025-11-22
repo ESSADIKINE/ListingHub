@@ -1,6 +1,6 @@
 import React from 'react'
 const bg = '/assets/img/title-banner.jpg'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import { FaBriefcase, FaDribbble, FaFacebookF, FaGlobe, FaHeadset, FaInstagram, FaPaperPlane, FaTwitter } from 'react-icons/fa'
 import Link from 'next/link'
 import FooterTop from 'components/footer-top'
@@ -10,7 +10,7 @@ import BackToTop from 'components/back-to-top'
 export default function ContactUs() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
 
         <section className="bg-cover position-relative" style={{backgroundImage:`url(${bg})`}} data-overlay="6">
             <div className="container">

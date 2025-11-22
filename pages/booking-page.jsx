@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarDark from 'components/navbar/navbar-dark'
+import NavbarLight from 'components/navbar/navbar-light'
 import Link from 'next/link'
 const listImg = '/assets/img/list-4.jpg'
 import { BsStarFill, BsStarHalf } from 'react-icons/bs'
@@ -11,7 +11,7 @@ import { MdArrowForwardIos } from 'react-icons/md'
 export default function BookingPage() {
   return (
     <>
-        <NavbarDark/>
+        <NavbarLight/>
 
         <section className="bg-light">
             <div className="container">
